@@ -1,0 +1,19 @@
+.nav-container {
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+
+    .nav-container__image {
+        height: 100%;
+        width: 157px;
+        background-color: transparentize(white, 0.5);
+    }
+    .nav-container__title {
+        height: 100%;
+        width: 231px;
+        background-color: transparentize(white, 0.5);
+    }
+}

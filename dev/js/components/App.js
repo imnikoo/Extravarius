@@ -1,19 +1,19 @@
 import React from 'react';
-import ItemList from '../containers/itemsList/items-list';
-import AdminPanel from '../containers/adminPanel/admin-panel';
-import Header from '../containers/header/header';
-import Cart from '../containers/cart/cart';
+import FrontPart from '../containers/FrontPart/frontPart';
+import BackPart from '../containers/BackPart/backPart';
 import {
-    BrowserRouter as Router, 
-    Route } from 'react-router-dom'
-
-require('../../scss/style.scss');
+    BrowserRouter as Router,
+    Route
+} from 'react-router-dom'
+require('./app.scss');
 
 const App = () => (
     <Router>
-        <FrontPart></FrontPart>
-        <Backpart></Backpart>
-    </Router>   
+        <div className="application-container">        
+            <FrontPart></FrontPart>
+            <BackPart></BackPart>
+        </div>
+    </Router>
 );
 
 export default App;

@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import Header from './Header/header';
+import ContentBlock from './ContentBlock/contentBlock';
+
 require('./frontPart.scss');
 
 class FrontPart extends Component {
     render() {
         return (
-            <div>
-                <Header></Header>
-                <ContentBox></ContentBox>
+            <div className="front-part">
+                <Header/>
+                <ContentBlock/>
             </div>
         );
     }
