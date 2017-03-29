@@ -13,6 +13,10 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: /\.(jpg|png)$/,
+                loader: 'file' 
+            },
+            {
                 test: /\.js$/,
                 loaders: ['babel'],
                 exclude: /node_modules/

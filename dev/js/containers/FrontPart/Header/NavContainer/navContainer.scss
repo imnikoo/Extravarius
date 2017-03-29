@@ -1,19 +1,57 @@
 .nav-container {
-    background-color: blue;
     height: 100px;
     width: 100%;
 
     display: flex;
     justify-content: flex-start;
 
-    .nav-container__image {
+    .image-container {
         height: 100%;
         width: 157px;
-        background-color: transparentize(white, 0.5);
+        display: flex;
+        justify-content: center;
+        .image-container__image {
+            height: 100%;
+            transform: translateY(-18px);
+        }
     }
-    .nav-container__title {
+    .title-container {
         height: 100%;
         width: 231px;
-        background-color: transparentize(white, 0.5);
+        display: flex;
+        flex-flow: column;
+
+        .title-container__title {
+            padding-left: 10px;
+            font-family: 'Roboto';
+            font-weight: 800;
+            font-size: 25px;
+        }
+        .title-container__description {
+            padding-left: 10px;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+    .nav-container__tickets-button{
+        margin-left: 33px;
+        width: 142px;
+        height: 46px;
+        border: 3px solid purple;
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        color: purple;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        transition: color 0.08s ease-in, background-color 0.08s ease-in;
+
+        &:hover {
+            background-color: purple;
+            color: white;
+        }
     }
 }
