@@ -2,6 +2,25 @@
     transform: translate(6px, 329px);
     width: 89.1%;
     height: 691px;
-    background-color: green;
     align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    .purple {
+        background-color: purple;
+    }
+    .limegreen {
+        background-color: limegreen;
+    }
+
+    .content-unit {
+        width: 50%;
+        .content-unit__diagonal {
+            transform: skewX(45deg) translate(-60px, -244px);
+            position: absolute;
+            width: 609px;
+            height: 590px;
+            opacity: 0.5;
+        }
+    }
 }
