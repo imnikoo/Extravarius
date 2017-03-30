@@ -13,17 +13,17 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.(jpg|png)$/,
-                loader: 'file' 
-            },
-            {
                 test: /\.js$/,
                 loaders: ['babel'],
                 exclude: /node_modules/
             },
             {
-                test: /\.scss/,
+                test: /\.s?css/,
                 loader: 'style-loader!css-loader!sass-loader'
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file?name=public/fonts/[name].[ext]'
             }
         ]
     },
@@ -32,6 +32,18 @@ module.exports = {
         filename: 'js/bundle.min.js'
     },
     plugins: [
-        new webpack.optimize.OccurrenceOrderPlugin()
+        new webpack.DefinePlugin({
+            'process.env': {
+            'NODE_ENV': JSON.stringify('production')
+            }
+        }),
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        /*new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        }),
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.LimitChunkCountPlugin({maxChunks: 15})*/
     ]
 };

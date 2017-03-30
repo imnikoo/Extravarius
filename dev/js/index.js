@@ -9,6 +9,8 @@ import createLogger from 'redux-logger';
 import allReducers from './reducers';
 import App from './components/App';
 
+import 'roboto-fontface';
+
 const logger = createLogger();
 const store = createStore(
     allReducers,

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack",
-    "start": "webpack-dev-server"
+    "dev": "webpack --progress -p",
+    "start": "webpack-dev-server --progress -p"
   },
   "license": "ISC",
   "dependencies": {
@@ -15,6 +15,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.9.0",
+    "base64-image-loader": "^1.2.0",
     "cross-env": "^1.0.8",
     "css-loader": "^0.23.1",
     "expect": "^1.20.1",
@@ -30,6 +31,7 @@
     "redux-logger": "^2.6.1",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.1.0",
+    "roboto-fontface": "^0.7.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
