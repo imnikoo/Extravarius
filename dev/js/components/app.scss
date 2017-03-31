@@ -2,3 +2,24 @@
     display: flex;
     justify-content: center;
 }
+
+@mixin button ($width, $height, $font-size, $background-color, $border-color, $color, $inverted-color) {
+    width: $width;
+    height: $height;
+    border: 3px solid $border-color;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: $font-size;
+    cursor: pointer;
+    color: $color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;
+    transition: color 0.08s ease-in, background-color 0.08s ease-in, border-color 0.08s ease-in;
+    &:hover {
+        background-color: $color;
+        color: $inverted-color;
+        border-color: $color;
+    }
+}

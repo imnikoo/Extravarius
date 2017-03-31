@@ -3,7 +3,8 @@
     height: 4346px;
     position: absolute;
     z-index: 1;
-
+    overflow: hidden;
+    
     display: flex;
     flex-direction: column;
 }
