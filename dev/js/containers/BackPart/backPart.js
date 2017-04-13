@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 require('./backPart.scss');
-var background = require("base64-image!../../../extras/076486333becfb81dac8af080e46af60-cropped-compressor.jpg");
+var background = require("../../../extras/076486333becfb81dac8af080e46af60-cropped-compressor.jpg");
 
 class BackPart extends Component {
     render() {

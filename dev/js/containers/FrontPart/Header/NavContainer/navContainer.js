@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './Nav/nav';
 require('./navContainer.scss');
-var logo = require('base64-image!../../../../../extras/logo-compressor.png');
+var logo = require('../../../../../extras/logo-compressor.png');
 
 
 class NavContainer extends Component {

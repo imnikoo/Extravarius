@@ -11,19 +11,29 @@ module.exports = {
     devtool: 'cheap-eval-source-map',
     entry: './dev/js/index.js',
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                loaders: ['babel'],
+                use: 'babel-loader',
                 exclude: /node_modules/
             },
             {
                 test: /\.s?css/,
-                loader: 'style-loader!css-loader!sass-loader'
+                use: [ 
+                    'style-loader',
+                    'css-loader', 
+                    'sass-loader' 
+                ]
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
-                loader: 'file?name=public/fonts/[name].[ext]'
+                loader: 'file-loader?name=public/fonts/[name].[ext]'
+            },
+            {
+                test: /\.(png|jpe?g)$/,
+                use: [
+                    'base64-image-loader'
+                ]
             }
         ]
     },
@@ -37,7 +47,8 @@ module.exports = {
             'NODE_ENV': JSON.stringify('production')
             }
         }),
-        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoEmitOnErrorsPlugin()
         /*new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false

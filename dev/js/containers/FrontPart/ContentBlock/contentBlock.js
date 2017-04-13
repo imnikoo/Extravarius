@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-require('./contentBlock.scss');
-var offers = require('base64-image!../../../../extras/ic_local_offer_white_24dp_2x.png');
+import offers from '../../../../extras/ic_local_offer_white_24dp_2x.png';
+import './contentBlock.scss';
 
 class ContentBlock extends Component {
     render() {
