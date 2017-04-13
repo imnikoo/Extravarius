@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 require('./contentBlock.scss');
+var offers = require('base64-image!../../../../extras/ic_local_offer_white_24dp_2x.png');
 
 class ContentBlock extends Component {
     render() {
@@ -20,6 +21,10 @@ class ContentBlock extends Component {
                     <div className="content-unit__diagonal" />
                 </div>
                 <div className="content-unit purple">
+                    <img src={offers} alt="Зніжкі"/>
+                    <span>АКЦІЇ ТА ЗНИЖКИ</span>
+                    <span>Активним відвідувачам дитячого табору - знижка</span>
+                    <span>При оплаті 5 днів перебування в дитячому таборі "Літні канікули в музеї" - знижка!</span>
                 </div>
                 <div className="content-unit purple">
                 </div>
