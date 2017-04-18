@@ -1,17 +1,19 @@
-import * as _ from '../../../node_modules/lodash'
-
-
+// import * as _ from '../../../node_modules/lodash';
+/*
 export default function (state = {}, action) {
-    switch(action.type) {
-        case 'SELECT_ITEM': {
-            return {
-                ...state, 
-                ...action.payload
-            };
-        };
-        case 'REMOVE_ITEM_SELECTION': {
-            return {};
-        }
+  switch (action.type) {
+    case 'SELECT_ITEM': {
+      return {
+        ...state,
+        ...action.payload
+      };
     }
-    return state;
+    case 'REMOVE_ITEM_SELECTION': {
+      return {};
+    }
+    default: {
+      return state;
+    }
+  }
 }
+*/

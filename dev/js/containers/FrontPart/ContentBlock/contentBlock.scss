@@ -15,6 +15,12 @@
         background-color: limegreen;
     }
 
+    .offers {
+       display: flex;
+       flex-flow: column;
+       justify-content: flex-start;
+    }
+
     .content-unit {
         width: 50%;
         .content-unit__diagonal {

@@ -5,14 +5,14 @@ import ContentBlock from './ContentBlock/contentBlock';
 require('./frontPart.scss');
 
 class FrontPart extends Component {
-    render() {
-        return (
-            <div className="front-part">
-                <Header/>
-                <ContentBlock/>
-            </div>
-        );
-    }
+   render() {
+      return (
+         <div className='front-part'>
+            <Header/>
+            <ContentBlock/>
+         </div>
+      );
+   }
 }
 
 export default FrontPart;
