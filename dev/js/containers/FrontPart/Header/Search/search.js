@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-require('./search.scss');
+import './search.scss';
 
 class Search extends Component {
    render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import offers from '../../../../extras/ic_local_offer_white_24dp_2x.png';
+import offers from '../../../../extras/ic_local_offer_white_24dp_2x.png';
 import './contentBlock.scss';
 
 class ContentBlock extends Component {
@@ -20,7 +20,12 @@ class ContentBlock extends Component {
                </div>
                <div className='content-unit__diagonal' />
             </div>
-            <div className='content-unit purple offers' />
+            <div className='content-unit purple offers'>
+               <img src={offers} alt='Зніжкі'/>
+               <span className='offers__first-mention'>АКЦІЇ ТА ЗНИЖКИ</span>
+               <span className='offers__second-mention'>Активним відвідувачам дитячого табору - знижка!</span>
+               <span className='offers__third-mention'>При оплаті 5 днів перебування в дитячому таборі "Літні канікули в музеї" - знижка!</span>
+            </div>
             <div className='content-unit purple' />
             <div className='content-unit limegreen' />
          </div>

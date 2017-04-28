@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-require('./backPart.scss');
+import './backPart.scss';
 const background = require('../../../extras/076486333becfb81dac8af080e46af60-cropped-compressor.jpg');
 
 class BackPart extends Component {

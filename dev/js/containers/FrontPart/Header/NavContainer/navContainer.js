@@ -9,20 +9,20 @@ class NavContainer extends Component {
       return (
          <div className='nav-container'>
             <div className='image-container'>
-               <img className='image-container__image' src={logo} alt='Лого'/>
+               <img className='image-container__image' src={logo} alt='Лого' />
             </div>
             <div className='title-container'>
                <span className='title-container__title'>
-                        Екстраваріус
-                    </span>
-               <span  className='title-container__description'>
-                        Музей популярної науки і техніки
-                    </span>
+                  Екстраваріус
+               </span>
+               <span className='title-container__description'>
+                  Музей популярної науки і техніки
+               </span>
             </div>
-            <Nav/>
+            <Nav />
             <div className='nav-container__tickets-button'>
-                    КВИТКИ
-                </div>
+               КВИТКИ
+            </div>
          </div>
       );
    }

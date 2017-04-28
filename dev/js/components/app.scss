@@ -7,7 +7,7 @@
     width: $width;
     height: $height;
     border: 3px solid $border-color;
-    font-family: 'Roboto';
+    @include font();
     font-weight: 600;
     font-size: $font-size;
     cursor: pointer;
@@ -22,4 +22,67 @@
         color: $inverted-color;
         border-color: $color;
     }
+}
+
+$primary-color: rgb(155,62,205);
+$secondary-color: white;
+$sucess-color: limegreen;
+$error-color: red;
+
+@mixin light-shadow() {
+   box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.25);
+}
+
+@mixin accent-shadow() {
+   box-shadow: 3px 8px 24px 1px rgba(0,0,0,0.32);
+}
+
+@mixin tooltip-shadow() {
+   box-shadow: 0px 8px 31px 1px rgba(0,0,0,0.22);
+}
+
+@mixin popup-shadow() {
+   box-shadow: 0px 8px 27px 2px rgba(0,0,0,0.27);
+}
+
+@mixin font() {
+   font-family: 'Roboto';
+}
+@mixin tip-font() {
+   @include font();
+   font-size: 0.8em;
+}
+@mixin standart-font() {
+   @include font();
+   font-size: 1em;
+}
+@mixin large-font() {
+   @include font();
+   font-size: 1.25em;
+}
+@mixin larger-font() {
+   @include font();
+   font-size: 1.6em;
+}
+@mixin bigger-font() {
+   @include font();
+   font-size: 2.4em;
+}
+@mixin biggest-font() {
+   @include font();
+   font-size: 3em;
+}
+@mixin ultra-big-font() {
+   @include font();
+   font-size: 6em;
+}
+
+@mixin little-border-radius() {
+   border-radius: 2px;
+}
+@mixin inputs-border-radius() {
+   border-radius: 4px;
+}
+@mixin card-border-radius() {
+   border-radius: 8px;
 }

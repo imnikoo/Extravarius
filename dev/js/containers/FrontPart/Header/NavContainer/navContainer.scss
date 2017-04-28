@@ -37,7 +37,7 @@
         }
     }
     .nav-container__tickets-button{
-        @include button(135px, 46px, 13px, transparent, purple, purple, white);
+        @include button(135px, 46px, 13px, transparent, rgb(155,62,205), rgb(155,62,205), white);
         margin-left: 33px;
     }
 }
