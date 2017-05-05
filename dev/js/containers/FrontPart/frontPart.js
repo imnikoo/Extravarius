@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header/header';
 import ContentBlock from './ContentBlock/contentBlock';
-
-require('./frontPart.scss');
+import './frontPart.scss';
 
 class FrontPart extends Component {
    render() {

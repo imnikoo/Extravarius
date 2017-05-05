@@ -9,7 +9,8 @@ class ContentBlock extends Component {
             <div className='content-unit special'>
                <div className='shifted-info'>
                   <div className='shifted-info__date'>
-                     <span>12</span><span>\09\2016</span>
+                     <span>12</span>
+                     <span>\09\2016</span>
                   </div>
                   <span className='shifted-info__action-title'>Лекція-експеримент</span>
                   <span className='shifted-info__action'>ДИФУЗІЯ. ВЗАЄМОДІЯ МОЛЕКУЛ ТА АТОМІВ У ПРИРОДІ.</span>
@@ -18,16 +19,17 @@ class ContentBlock extends Component {
                      <div className='buttons__checkout-tickets'>ПРИДБАТИ КВИТКИ</div>
                   </div>
                </div>
-               <div className='content-unit__diagonal' />
+               <div className='content-unit__diagonal'/>
             </div>
             <div className='content-unit purple offers'>
                <img src={offers} alt='Зніжкі'/>
                <span className='offers__first-mention'>АКЦІЇ ТА ЗНИЖКИ</span>
                <span className='offers__second-mention'>Активним відвідувачам дитячого табору - знижка!</span>
-               <span className='offers__third-mention'>При оплаті 5 днів перебування в дитячому таборі "Літні канікули в музеї" - знижка!</span>
+               <span className='offers__third-mention'>При оплаті 5 днів перебування в дитячому
+                  таборі "Літні канікули в музеї" - знижка!</span>
             </div>
-            <div className='content-unit purple' />
-            <div className='content-unit limegreen' />
+            <div className='content-unit purple'/>
+            <div className='content-unit limegreen'/>
          </div>
       );
    }
