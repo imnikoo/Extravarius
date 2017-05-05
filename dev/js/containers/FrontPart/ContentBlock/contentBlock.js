@@ -28,7 +28,13 @@ class ContentBlock extends Component {
                <span className='offers__third-mention'>При оплаті 5 днів перебування в дитячому
                   таборі "Літні канікули в музеї" - знижка!</span>
             </div>
-            <div className='content-unit purple'/>
+            <div className='content-unit purple offers'>
+               <img src={offers} alt='Зніжкі'/>
+               <span className='offers__first-mention'>3D ТУР</span>
+               <span className='offers__second-mention'>ЭКСПЕРЕМЕТАТИУМ</span>
+               <span className='offers__third-mention'>При оплаті 5 днів перебування в дитячому
+                  таборі "Літні канікули в музеї" - знижка!</span>
+            </div>
             <div className='content-unit limegreen'/>
          </div>
       );

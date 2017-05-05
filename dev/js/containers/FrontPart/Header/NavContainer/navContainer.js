@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './Nav/nav';
-require('./navContainer.scss');
+import './navContainer.scss';
 const logo = require('../../../../../extras/logo-compressor.png');
 
 
