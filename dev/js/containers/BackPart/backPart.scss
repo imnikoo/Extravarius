@@ -1,104 +1,127 @@
 @import '../../components/app.scss';
 .back-part {
-    width: 100%;
-    height: 4346px;
-    z-index: 0;
+   width: 100%;
+   height: 4346px;
+   z-index: 0;
 }
 
 .back-part__difussion {
-    width: 100%;
+   width: 100%;
 }
 
 footer {
-    @include font();
-    padding-top: 266px;
-    padding-left: 81px;
-    background-color: $primary-color;
-    display: flex;
-    .info {
-        width: 35.5%;
-        padding-right: 65px;
-    }
-    .subscribe-input {
-        margin-top: 62px;
-        margin-bottom: 62px;
-        color: white;
-        @include tip-font();
-        font-weight: 600;
-        .subscribe-title {
-            display: block;
-            margin-bottom: 10px;
-        }
-        input[type=text] {
-            @include font();
-            height: 22px;
-            width: 210px;
-            margin-top: 10px;
-            padding-left: 16px;
-            background: transparent;
-            border: none;
-            border-bottom: 2px solid rgb(179, 174, 182);
-        }
-        input[type=text]::placeholder {
-            color: white;
-        }
-    }
-    .twitter-icon {
-        width: 30px;
-        height: 30px;
-        padding-top: 16px;
-        padding-left: 8px;
-        cursor: pointer;
-    }
-    .facebook-icon {
-        width: 30px;
-        height: 30px;
-        padding-top: 16px;
-        padding-right: 8px;
-        cursor: pointer;
-    }
-    .socials-container {
-        padding-top: 5px;
-        @include tip-font();
-        font-weight: 600;
-        color: white;
-        .socials-container__title {
-            display: inline-block;
-            width: 100%;
-        }
-    }
-    .footer-nav {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 61px;
-        ul>li {
-            list-style-type: none;
-        }
-        .list-title {
-            color: white;
-            font-size: 14px;
-            font-weight: 600;
-            padding-bottom: 24px;
-        }
-        .list-element {
-            padding-top: 4px;
-            font-size: 13px;
-            padding-bottom: 4px;
-            color: white;
-        }
-    }
+   @include font();
+   height: 431px;
+   padding-top: 266px;
+   padding-left: 81px;
+   background-color: $primary-color;
+   display: flex;
+   .info {
+      width: 35.5%;
+      padding-right: 42px;
+   }
+   .subscribe-input {
+      margin-top: 62px;
+      margin-bottom: 62px;
+      color: white;
+      @include tip-font();
+      font-weight: 600;
+      .subscribe-title {
+         display: block;
+         margin-bottom: 10px;
+      }
+      input[type=text] {
+         @include font();
+         height: 22px;
+         width: 210px;
+         margin-top: 10px;
+         padding-left: 16px;
+         background: transparent;
+         border: none;
+         border-bottom: 2px solid rgb(179, 174, 182);
+      }
+      input[type=text]::placeholder {
+         color: white;
+      }
+   }
+   .twitter-icon {
+      width: 30px;
+      height: 30px;
+      padding-top: 16px;
+      padding-left: 8px;
+      cursor: pointer;
+   }
+   .facebook-icon {
+      width: 30px;
+      height: 30px;
+      padding-top: 16px;
+      padding-right: 8px;
+      cursor: pointer;
+   }
+   .socials-container {
+      padding-top: 5px;
+      @include tip-font();
+      font-weight: 600;
+      color: white;
+      .socials-container__title {
+         display: inline-block;
+         width: 100%;
+      }
+   }
+   .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 42px;
+      ul>li {
+         list-style-type: none;
+      }
+      .list {
+         flex-basis: 155px;
+      }
+      .list-title {
+         color: white;
+         font-size: 14px;
+         font-weight: 600;
+         padding-bottom: 24px;
+      }
+      .list-element {
+         padding-top: 4px;
+         font-size: 13px;
+         padding-bottom: 4px;
+         color: white;
+      }
+   }
 }
 
-.image-container {
-    img {
-        width: inherit;
-    }
-    width: 83px;
+.tesla-container {
+   background-color: $primary-color;
+}
+
+.logo-container {
+   img {
+      width: 23%;
+      height: 19%;
+   }
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   .title-container {
+      padding: 16px 0 0px 24px;
+      color: white;
+      .title-container__title {
+         display: block;
+         font-weight: 600;
+         font-size: 17px;
+      }
+      .title-container__description {
+         font-size: 13px;
+      }
+   }
 }
 
 @media (min-width: 1366px) {
-    .back-part {
-        width: 1366px;
-        height: 4346px;
-    }
+   .back-part {
+      width: 1366px;
+      height: 4346px;
+   }
 }

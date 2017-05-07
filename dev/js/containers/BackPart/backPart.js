@@ -14,7 +14,8 @@ class BackPart extends Component {
             <div className='news-digest'>
                <div className='latest-item'>
                   <span className='latest-item__date'>14/04/17</span>
-                  <span className='latest-item__description'>Музей "Екстраваріус" побував на пропрем'єрному показі мультфільму "Норм та Незламані"</span>
+                  <span className='latest-item__description'>Музей "Екстраваріус" побував на
+                     пропрем'єрному показі мультфільму "Норм та Незламані"</span>
                </div>
                <div className='latest-item-details'>
                   <button className='to-details'>ДЕТАЛЬНІШЕ</button>
@@ -25,23 +26,35 @@ class BackPart extends Component {
                </div>
             </div>
             <div className='tesla-container'>
-               <div className='tesla-img' />
-               <div className='tesla-transformator' />
+               <div className='tesla-img'/>
+               <div className='tesla-transformator'/>
                <div className='transformator-details'>
                   <span className='transformator-details__title'>ТРАНСФОРМАТОР ТЕСЛА</span>
                   <span className='transformator-details__info'>
-                        Пристрій, винайдений Ніколою Теслою, що носить його ім'я і виконаний у вигляді трансформатора, ввімкнутого обмотками в коливальні контури,
-                        які працюють в резонансному режимі та служить для утворення високої електричної напруги (десятки кіловольт) високої частоти.
-                     </span>
-                  <span className='transformator-details__info'>Прилад було запатентовано 22 вересня 1896 року, як "Апарат для вироблення електричних струмів високої частоти та потенціалу"</span>
+                     Пристрій, винайдений Ніколою Теслою, що носить його ім'я і виконаний у вигляді
+                     трансформатора, ввімкнутого обмотками в коливальні контури, які працюють в
+                     резонансному режимі та служить для утворення високої електричної напруги
+                     (десятки кіловольт) високої частоти.
+                  </span>
+                  <span className='transformator-details__info'>Прилад було запатентовано 22
+                     вересня 1896 року, як "Апарат для вироблення електричних струмів високої частоти
+                     та потенціалу"</span>
                   <button className='read-more'>ЧИТАТИ ДАЛІ</button>
                   <button className='buy-tickets'>ПРИДБАТИ КВИТКИ НА ШОУ</button>
                </div>
             </div>
             <footer>
                <div className='info'>
-                  <div className='image-container'>
-                     <img className='image-container__image' src={logo} alt='Лого' />
+                  <div className='logo-container'>
+                     <img className='logo__image' src={logo} alt='Лого'/>
+                     <div className='title-container'>
+                        <span className='title-container__title'>
+                           Екстраваріус
+                        </span>
+                        <span className='title-container__description'>
+                           Музей популярної науки і техніки
+                        </span>
+                     </div>
                   </div>
                   <div className='subscribe-input'>
                      <span className='subscribe-title'>ПІДПИСАТИСЬ НА НОВИНИ</span>
@@ -49,8 +62,8 @@ class BackPart extends Component {
                   </div>
                   <div className='socials-container'>
                      <span className='socials-container__title'>МИ В СОЦІАЛЬНИХ МЕРЕЖАХ</span>
-                     <img className='facebook-icon' src={facebook} />
-                     <img className='twitter-icon' src={twitter} />
+                     <img className='facebook-icon' src={facebook}/>
+                     <img className='twitter-icon' src={twitter}/>
                   </div>
                </div>
 
