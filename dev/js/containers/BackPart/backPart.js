@@ -29,18 +29,20 @@ class BackPart extends Component {
                <div className='tesla-img'/>
                <div className='tesla-transformator'/>
                <div className='transformator-details'>
-                  <span className='transformator-details__title'>ТРАНСФОРМАТОР ТЕСЛА</span>
-                  <span className='transformator-details__info'>
-                     Пристрій, винайдений Ніколою Теслою, що носить його ім'я і виконаний у вигляді
-                     трансформатора, ввімкнутого обмотками в коливальні контури, які працюють в
-                     резонансному режимі та служить для утворення високої електричної напруги
-                     (десятки кіловольт) високої частоти.
-                  </span>
-                  <span className='transformator-details__info'>Прилад було запатентовано 22
-                     вересня 1896 року, як "Апарат для вироблення електричних струмів високої частоти
-                     та потенціалу"</span>
-                  <button className='read-more'>ЧИТАТИ ДАЛІ</button>
-                  <button className='buy-tickets'>ПРИДБАТИ КВИТКИ НА ШОУ</button>
+                  <div className='details-container'>
+                     <span className='details-container__title'>ТРАНСФОРМАТОР ТЕСЛА</span>
+                     <span className='details-container__info'>
+                        Пристрій, винайдений Ніколою Теслою, що носить його ім'я і виконаний у вигляді
+                        трансформатора, ввімкнутого обмотками в коливальні контури, які працюють в
+                        резонансному режимі та служить для утворення високої електричної напруги
+                        (десятки кіловольт) високої частоти.
+                     </span>
+                     <span className='details-container__info'>Прилад було запатентовано 22
+                        вересня 1896 року, як "Апарат для вироблення електричних струмів високої частоти
+                        та потенціалу"</span>
+                     <button className='read-more'>ЧИТАТИ ДАЛІ</button>
+                     <button className='buy-tickets'>ПРИДБАТИ КВИТКИ НА ШОУ</button>
+                  </div>
                </div>
             </div>
             <footer>

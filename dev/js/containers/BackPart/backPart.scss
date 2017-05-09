@@ -95,6 +95,29 @@ footer {
 
 .tesla-container {
    background-color: $primary-color;
+   display: flex;
+   justify-content: space-around;
+   height: 1168px;
+   .tesla-img {
+      width: 50.8%;
+      background-color: white;
+   }
+   .tesla-transformator {
+      background-color: black;
+      position: absolute;
+      width: 426px;
+      height: 449px;
+      transform: translate(-50px, 107px);
+   }
+   .transformator-details {
+      width: 50%;
+      @include font();
+      .details-container {
+         margin-left: 212px;
+         margin-top: 148px;
+         margin-right: 100px;
+      }
+   }
 }
 
 .logo-container {
