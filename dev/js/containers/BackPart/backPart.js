@@ -5,12 +5,14 @@ const background = require('../../../extras/076486333becfb81dac8af080e46af60-cro
 const logo = require('../../../extras/logo-compressor.png');
 const twitter = require('../../../extras/Twitter_Logo_White_On_Image.png');
 const facebook = require('../../../extras/FB-f-Logo__blue_50.png');
+const teslaTransformator = require('../../../extras/transformator.png');
+const tesla = require('../../../extras/tesla.png');
 
 class BackPart extends Component {
    render() {
       return (
          <div className='back-part'>
-            <img className='back-part__difussion' src={background}/>
+            <img className='back-part__difussion' src={background} />
             <div className='news-digest'>
                <div className='latest-item'>
                   <span className='latest-item__date'>14/04/17</span>
@@ -26,8 +28,13 @@ class BackPart extends Component {
                </div>
             </div>
             <div className='tesla-container'>
-               <div className='tesla-img'/>
-               <div className='tesla-transformator'/>
+               <div className='tesla-img'>
+                  <img src={tesla}/>
+                  <div className='white-background' />
+               </div>
+               <div className='tesla-transformator'>
+                  <img src={teslaTransformator} />
+               </div>
                <div className='transformator-details'>
                   <div className='details-container'>
                      <span className='details-container__title'>ТРАНСФОРМАТОР ТЕСЛА</span>
@@ -40,15 +47,18 @@ class BackPart extends Component {
                      <span className='details-container__info'>Прилад було запатентовано 22
                         вересня 1896 року, як "Апарат для вироблення електричних струмів високої частоти
                         та потенціалу"</span>
-                     <button className='read-more'>ЧИТАТИ ДАЛІ</button>
-                     <button className='buy-tickets'>ПРИДБАТИ КВИТКИ НА ШОУ</button>
+                     <div className='buttons-container'>
+                        <button className='read-more'>ЧИТАТИ ДАЛІ</button>
+                        <button className='buy-tickets'>ПРИДБАТИ КВИТКИ НА ШОУ</button>
+                     </div>
+
                   </div>
                </div>
             </div>
             <footer>
                <div className='info'>
                   <div className='logo-container'>
-                     <img className='logo__image' src={logo} alt='Лого'/>
+                     <img className='logo__image' src={logo} alt='Лого' />
                      <div className='title-container'>
                         <span className='title-container__title'>
                            Екстраваріус
@@ -60,12 +70,12 @@ class BackPart extends Component {
                   </div>
                   <div className='subscribe-input'>
                      <span className='subscribe-title'>ПІДПИСАТИСЬ НА НОВИНИ</span>
-                     <input placeholder='Введіть e-mail' type='text'/>
+                     <input placeholder='Введіть e-mail' type='text' />
                   </div>
                   <div className='socials-container'>
                      <span className='socials-container__title'>МИ В СОЦІАЛЬНИХ МЕРЕЖАХ</span>
-                     <img className='facebook-icon' src={facebook}/>
-                     <img className='twitter-icon' src={twitter}/>
+                     <img className='facebook-icon' src={facebook} />
+                     <img className='twitter-icon' src={twitter} />
                   </div>
                </div>
 
